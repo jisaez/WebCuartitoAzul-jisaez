@@ -116,12 +116,19 @@ header{
                 @media screen and (min-width: 390px) {
                     font-size: $textMD;
                 }
-            }
-            p{
-                @media screen and (max-width: 390px) {
-                    font-size: $textXS;
+                @media screen and (min-width: 992px){
+                font-size: $textLG;
                 }
-            }
+            }    
+            p{
+                font-size: $textXS;
+                @media screen and (min-width: 390px) {
+                    font-size: $textSM;    
+                }
+                @media screen and (min-width: 576px) {
+                    font-size: $textMD;
+                }
+            }    
             a{
                 @media screen and (max-width: 390px) {
                     font-size: $textXS;
@@ -129,11 +136,42 @@ header{
             }
         }
     }
-
 }
 // SEC MENU ========
 .secmenu{
     height: 50vh;
+    div{
+        h2{
+            font-family: $titleFont;
+            font-size: $textSM;
+            @media screen and (min-width: 390px) {
+                font-size: $textMD;
+            }
+            @media screen and (min-width: 992px){
+            font-size: $textLG;
+            }
+        }    
+        p{
+            font-size: $textXS;
+            @media screen and (min-width: 390px) {
+                font-size: $textSM;    
+            }
+            @media screen and (min-width: 576px) {
+                font-size: $textMD;
+            }
+        }    
+        a{
+            @media screen and (max-width: 390px) {
+                font-size: $textXS;
+            }
+        }
+    }
+    div{
+        img{
+            max-width: 100%;
+            max-height: 100%;
+        }
+    }
 }
 // SEC COMENTARIOS =======
 
@@ -175,14 +213,6 @@ header{
     }
 }
 
-// .comentarios__deco{
-//     max-height: 30%;
-//     z-index: 58;
-//     max-width: 50%;
-//     position: relative;
-//     margin-bottom: auto auto 0px auto;
-// }
-
 .comentarios_btnr{
     margin: 0px;
     justify-content: end;
@@ -204,29 +234,32 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
+    @media screen and(min-width: 768px) {
+        justify-content: flex-end;
+    }
     div{
-        max-width: 80%;
-        width: 90%;
+        max-height: 80%;
+        max-width: 60%;
         text-align: center;
-        background-color: #000000c7;
+        background-color: $color_t;
         padding: 16px;
+        margin: 10px;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
-        @media screen and (min-width: 576px) {
-            height: auto;
+        border-radius: 20px;;
+        // align-self: top;
+        @media screen and (min-width: 768px) {
+            // height: auto;
             max-height: 80%;
-            width: 50%;
-            border-radius: 20px;
-
-            
+            width: 70%;
         }
         h4{
             font-family: $cursiveFont;
             font-size: $textXXL;
             color: $color4;
-            @media screen and (min-width: 480px) {
+            @media screen and (min-width: 768px) {
                 font-weight: 900;
                 align-self: flex-start;
             }
@@ -235,7 +268,7 @@ header{
             text-align: center;
 	        font-size: $textMD;
             color: $color_w;
-            @media screen and (min-width: 480px) {
+            @media screen and (min-width: 768px) {
                 font-size: $textXL;
             }
         }
@@ -243,8 +276,9 @@ header{
             @extend .boton;
             background-color: $color4 !important;
             opacity: 1;
-            @media screen and (min-width: 480px) {
+            @media screen and (min-width: 768px) {
                 align-self: flex-end;
+                font-size: $textMD;
             } 
             &:hover{
                 padding: 2px 18px;
@@ -306,10 +340,62 @@ header{
 
 // Sec MAPS
 
+// .sec_info{
+//     height: 40vh;
+//     width: 100vw;
+//     background-color: $color_w;
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: center;
+//     align-items: flex-start;
+//     div{
+//         height: 50%;
+//         max-width: 100%;
+//         border:0.5px solid $color1;
+//         margin: 10px;
+//     }
+//     section{
+//         height: 25%;
+//         max-width: 100%;
+//         margin: 10px;
+//         display: flex;
+//         flex-direction: column;
+//         justify-content: center;
+//         align-items: center;
+        
+//     }
+// }
+
 .lowcontact{
-    height: map-get($map: $heights, $key:'h10');
 	background-color: #fff;
 	display: flex;
-	justify-content: space-around;
+	justify-content: center;
     align-items: center;
+    flex-direction: column;
+    div{
+        p{
+            font-family: $titleFont;
+            color: $color3;
+            font-size: $textXL;
+        }
+    }
+    div{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        a{
+            img{
+                height: 50px;
+                margin: 20px;
+            }
+        }
+    }
+}
+
+footer{
+    p{
+        font-family: $mainFont;
+        font-size: $textMD;
+        margin:auto;
+    }
 }

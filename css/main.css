@@ -140,15 +140,46 @@ header {
         @media screen and (min-width: 390px) {
           .nosotros div div h2 {
             font-size: 2rem; } }
-      @media screen and (max-width: 390px) {
-        .nosotros div div p {
-          font-size: 1rem; } }
+        @media screen and (min-width: 992px) {
+          .nosotros div div h2 {
+            font-size: 3rem; } }
+      .nosotros div div p {
+        font-size: 1rem; }
+        @media screen and (min-width: 390px) {
+          .nosotros div div p {
+            font-size: 1.5rem; } }
+        @media screen and (min-width: 576px) {
+          .nosotros div div p {
+            font-size: 2rem; } }
       @media screen and (max-width: 390px) {
         .nosotros div div a {
           font-size: 1rem; } }
 
 .secmenu {
   height: 50vh; }
+  .secmenu div h2 {
+    font-family: "Quando", serif;
+    font-size: 1.5rem; }
+    @media screen and (min-width: 390px) {
+      .secmenu div h2 {
+        font-size: 2rem; } }
+    @media screen and (min-width: 992px) {
+      .secmenu div h2 {
+        font-size: 3rem; } }
+  .secmenu div p {
+    font-size: 1rem; }
+    @media screen and (min-width: 390px) {
+      .secmenu div p {
+        font-size: 1.5rem; } }
+    @media screen and (min-width: 576px) {
+      .secmenu div p {
+        font-size: 2rem; } }
+  @media screen and (max-width: 390px) {
+    .secmenu div a {
+      font-size: 1rem; } }
+  .secmenu div img {
+    max-width: 100%;
+    max-height: 100%; }
 
 .seccomentarios {
   min-height: 30vh;
@@ -200,27 +231,30 @@ header {
   display: flex;
   align-items: center;
   justify-content: center; }
+  @media screen and (min-width: 768px) {
+    #sec_catering {
+      justify-content: flex-end; } }
   #sec_catering div {
-    max-width: 80%;
-    width: 90%;
+    max-height: 80%;
+    max-width: 60%;
     text-align: center;
     background-color: #000000c7;
     padding: 16px;
+    margin: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around; }
-    @media screen and (min-width: 576px) {
+    justify-content: space-around;
+    border-radius: 20px; }
+    @media screen and (min-width: 768px) {
       #sec_catering div {
-        height: auto;
         max-height: 80%;
-        width: 50%;
-        border-radius: 20px; } }
+        width: 70%; } }
     #sec_catering div h4 {
       font-family: "Send Flowers", cursive;
       font-size: 6rem;
       color: #ffc152; }
-      @media screen and (min-width: 480px) {
+      @media screen and (min-width: 768px) {
         #sec_catering div h4 {
           font-weight: 900;
           align-self: flex-start; } }
@@ -228,15 +262,16 @@ header {
       text-align: center;
       font-size: 2rem;
       color: #f7fbff; }
-      @media screen and (min-width: 480px) {
+      @media screen and (min-width: 768px) {
         #sec_catering div p {
           font-size: 3.5rem; } }
     #sec_catering div a {
       background-color: #ffc152 !important;
       opacity: 1; }
-      @media screen and (min-width: 480px) {
+      @media screen and (min-width: 768px) {
         #sec_catering div a {
-          align-self: flex-end; } }
+          align-self: flex-end;
+          font-size: 2rem; } }
       #sec_catering div a:hover {
         padding: 2px 18px; }
 
@@ -281,11 +316,27 @@ header {
     margin: 10px; }
 
 .lowcontact {
-  height: 10vh;
   background-color: #fff;
   display: flex;
-  justify-content: space-around;
-  align-items: center; }
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+  .lowcontact div p {
+    font-family: "Quando", serif;
+    color: #b22420;
+    font-size: 3.5rem; }
+  .lowcontact div {
+    display: flex;
+    align-items: center;
+    justify-content: space-around; }
+    .lowcontact div a img {
+      height: 50px;
+      margin: 20px; }
+
+footer p {
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  margin: auto; }
 
 /*page CATERING*/
 #page__catering {
