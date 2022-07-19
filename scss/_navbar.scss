@@ -1,0 +1,59 @@
+nav{
+    background-color: $color1;
+	padding: 5px 25px;
+	opacity: .9;
+    div{
+        a{
+            img{
+                width: 250px;
+                @media (max-width: 380px){
+                    width: 150px;
+                }
+            }
+        }
+        button{
+            background-image: url(../img/burgermenu.svg);
+            display: inline-block;
+            width: 2em;
+            height: 2em;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 100%;
+            &:focus{
+                color: $color_w;
+            }
+            span{ 
+                display: inline-block;
+                width: 2em;
+                height: 2em;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: 100%; 
+            }
+        }
+
+        div{
+            ul{
+                li{
+                    margin: 15px;
+                    a{
+                        padding: 0 .5rem;
+                        font-family: $titleFont;
+                        color: $color_w;
+                        font-size: $textSM;        
+                        text-decoration: none;
+                        padding: 15px;
+                        transition: color 0.15s ease-in-out;
+                        &:hover,
+                        &:focus {
+                            color: $color2;
+                            text-decoration: underline;
+                            font-size: 1.8rem;
+                            padding: 6px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+} 

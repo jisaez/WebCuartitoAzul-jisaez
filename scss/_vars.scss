@@ -1,0 +1,53 @@
+// ================= COLORS ===============
+
+$color1:#085492;
+$color2:#9acfdb;
+$color3:#b22420;
+$color4:#ffc152;
+$color5:#ffc0cb;
+$color_w:#f7fbff;
+$color_b:#07090a;
+
+// ================= FONTS ============
+
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Plus&family=Quando&family=Roboto&family=Send+Flowers&display=swap');
+
+
+// FontsTipes
+
+$mainFont:'Roboto', sans-serif;
+$titleFont: 'Quando', serif;
+$cursiveFont: 'Send Flowers', cursive;
+
+// Fonts Sizes
+
+$textXS: 1rem;
+$textSM: 1.5rem;
+$textMD: 2rem;
+$textLG: 3rem;
+$textXL: 3.5rem;
+$textXXL: 6rem;
+
+// ======= BTN ======
+
+%boton{
+font-family: 'Gentium Plus', serif;
+font-size: 2rem;
+text-decoration: none;
+color: #FFFFFF;
+background-color: #b22420;
+opacity: .8;
+border-radius: 50%;
+border: none;
+}
+
+// MAPS 4 heights
+
+$heights:(
+    'h100':100vh,
+    'h80':80vh,
+    'h75':75vh,
+    'h60':60vh,
+    'h40':40vh,
+    'h10':10vh,
+);

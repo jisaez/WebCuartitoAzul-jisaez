@@ -1,0 +1,16 @@
+{
+  "name": "cuartito-azul-web",
+  "version": "1.0.0",
+  "description": "Entrega final jisaez",
+  "main": "index.js",
+  "scripts": {
+    "watch-css": "sass -w scss/main.scss:css/main.css"
+  },
+  "keywords": [
+    "cuartitoazul",
+    "jisaez"
+  ],
+  "author": "jisaez",
+  "license": "ISC"
+
+}

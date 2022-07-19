@@ -1,0 +1,346 @@
+@import url("https://fonts.googleapis.com/css2?family=Gentium+Plus&family=Quando&family=Roboto&family=Send+Flowers&display=swap");
+nav {
+  background-color: #085492;
+  padding: 5px 25px;
+  opacity: .9; }
+  nav div a img {
+    width: 250px; }
+    @media (max-width: 380px) {
+      nav div a img {
+        width: 150px; } }
+  nav div button {
+    background-image: url(../img/burgermenu.svg);
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%; }
+    nav div button:focus {
+      color: #f7fbff; }
+    nav div button span {
+      display: inline-block;
+      width: 2em;
+      height: 2em;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 100%; }
+  nav div div ul li {
+    margin: 15px; }
+    nav div div ul li a {
+      padding: 0 .5rem;
+      font-family: "Quando", serif;
+      color: #f7fbff;
+      font-size: 1.5rem;
+      text-decoration: none;
+      padding: 15px;
+      transition: color 0.15s ease-in-out; }
+      nav div div ul li a:hover, nav div div ul li a:focus {
+        color: #9acfdb;
+        text-decoration: underline;
+        font-size: 1.8rem;
+        padding: 6px; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+html {
+  font-size: 62.5%;
+  height: 100vh;
+  width: 100vw; }
+
+.bg__color3 {
+  background-color: #b22420; }
+
+.bg__color5 {
+  background: linear-gradient(to top, #ffc0cb, #f7fbff); }
+
+.bg__white {
+  background-color: #f7fbff; }
+
+.bg__transparent {
+  background-color: transparent; }
+
+body {
+  background-color: #085492;
+  min-height: 100vh;
+  max-width: 100vw; }
+
+footer {
+  height: 10vh;
+  background-color: #085492;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 0%; }
+
+p {
+  font-size: 1.5rem; }
+
+.boton, #sec_catering div a {
+  display: inline-block;
+  font-family: "Quando", serif;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #f7fbff;
+  background-color: #b22420;
+  opacity: .9;
+  border-radius: 8px;
+  border: none;
+  padding: 3px 20px; }
+  .boton:hover, #sec_catering div a:hover {
+    color: #f7fbff;
+    cursor: pointer;
+    border: 1px solid #f7fbff;
+    background-color: #085492;
+    padding: 2px 20px; }
+
+header {
+  height: 60vh;
+  background-image: url(../img/header1.jpg);
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center; }
+  header h1 {
+    font-family: "Quando", serif;
+    color: #f7fbff;
+    font-size: 3.5rem;
+    margin: 15px; }
+
+.nosotros {
+  height: 50vh;
+  background-color: #9acfdb;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .nosotros div {
+    height: 100%;
+    max-width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center; }
+    .nosotros div img {
+      height: 30px;
+      margin: 14px 0; }
+    .nosotros div div {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      text-align: center; }
+      .nosotros div div h2 {
+        font-family: "Quando", serif;
+        font-size: 1.5rem; }
+        @media screen and (min-width: 390px) {
+          .nosotros div div h2 {
+            font-size: 2rem; } }
+      @media screen and (max-width: 390px) {
+        .nosotros div div p {
+          font-size: 1rem; } }
+      @media screen and (max-width: 390px) {
+        .nosotros div div a {
+          font-size: 1rem; } }
+
+.secmenu {
+  height: 50vh; }
+
+.seccomentarios {
+  position: relative;
+  min-height: 30vh; }
+
+.comentarios__marco {
+  height: 80%;
+  border: 2px solid #ffc152;
+  text-align: center;
+  padding: 26px 10px 10px;
+  margin: 36px 20px 20px; }
+
+.comentarios__bandoneon {
+  max-height: 10%;
+  position: relative;
+  z-index: 59;
+  margin-top: 0;
+  width: 50%; }
+
+.comentarios__deco {
+  max-height: 30%;
+  z-index: 58;
+  max-width: 50%;
+  position: relative;
+  margin-bottom: auto auto 0px auto; }
+
+#sec_catering {
+  height: 60vh;
+  width: 100%;
+  background-image: url(../img/bgcatering_.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  #sec_catering div {
+    width: 90%;
+    text-align: left;
+    background-color: #000000c7;
+    margin: 15px;
+    display: flex;
+    flex-direction: column; }
+    #sec_catering div h4 {
+      font-family: "Send Flowers", cursive;
+      font-size: 6rem;
+      color: #ffc152;
+      position: relative;
+      z-index: 69; }
+    #sec_catering div p {
+      text-align: center;
+      font-size: 3rem;
+      color: #f7fbff; }
+    #sec_catering div a {
+      background-color: #ffc152 !important;
+      padding: 1.8%;
+      margin-bottom: 10px;
+      position: relative;
+      align-self: flex-end;
+      margin-right: -15px;
+      opacity: 1; }
+
+.bg__eventos {
+  background-image: url(../img/bgeventos.png);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.eventos {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center; }
+
+.eventos__contenido {
+  width: 20%;
+  margin: 15px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center; }
+
+.lowcontact {
+  height: 10vh;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+
+/*page CATERING*/
+#page__catering {
+  height: 80vh;
+  background-image: url(../img/bgcatering.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  #page__catering div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #B5B5B5;
+    opacity: .87;
+    justify-content: space-between; }
+    #page__catering div h1 {
+      font-family: "Send Flowers", cursive;
+      font-size: 9rem;
+      color: #ffc152; }
+    #page__catering div p {
+      color: #f7fbff;
+      font-size: 1.7rem; }
+    #page__catering div a {
+      background-color: #ffc152;
+      text-decoration: none;
+      padding: 10px;
+      position: relative;
+      left: 10%;
+      top: 29px;
+      opacity: 1; }
+
+/* PAGE MENU */
+.page__menu {
+  height: 100vh;
+  background-color: #9acfdb; }
+
+.img__card {
+  max-height: 100px; }
+
+/* platillos */
+.section__menu {
+  background-color: #9acfdb;
+  opacity: 1;
+  width: 100%; }
+
+.section__menu--carta {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap; }
+
+/* PAGE NOSOTROS */
+.nosotros__img {
+  border-radius: 60%;
+  border: 10px double #ffc152;
+  animation-name: animopacity;
+  animation-duration: 4s; }
+
+.nosotros__img:hover {
+  transform: scale(1.014);
+  border-radius: 60%;
+  border: none; }
+
+/* PAGE CONTACTO */
+.input__texto {
+  width: 40rem;
+  height: 20rem; }
+
+.boton__contacto {
+  font-family: 'Gentium Plus', serif;
+  font-size: 2rem;
+  text-decoration: none;
+  color: #FFFFFF;
+  background-color: #b22420;
+  opacity: .8;
+  border: none; }
+
+.input__boton {
+  opacity: 1;
+  margin: 5px 5px 20px 40px; }
+
+/* PAGE CONTACTO */
+.page__contacto {
+  height: 75vh; }
+
+fieldset {
+  margin: 20px;
+  /* max-width: 60%; */
+  text-align: left;
+  border-style: double;
+  border-color: #b22420;
+  font-family: 'Roboto', sans-serif;
+  color: #085492;
+  font-size: 2rem;
+  padding: 10px; }
+
+label {
+  font-family: 'Quando', serif;
+  color: #b22420;
+  font-size: 2.5rem;
+  font-weight: 900; }
+
+/*# sourceMappingURL=main.css.map */

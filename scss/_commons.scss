@@ -1,0 +1,250 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+html{
+	font-size: 62.5%;
+	height: 100vh;
+	width: 100vw;
+}
+
+// Backgrounds
+
+.bg__color3{
+    background-color: $color3;
+}
+
+.bg__color5{
+    background: linear-gradient(to top, $color5, $color_w);
+}
+.bg__white{
+    background-color: $color_w;
+}
+
+.bg__transparent{
+    background-color: transparent;
+}
+
+body{
+	background-color: $color1;
+    min-height: map-get($map: $heights, $key:'h100');
+    max-width: 100vw;
+}
+
+footer{
+    height: map-get($map: $heights, $key:'h10');
+    background-color: #085492;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 0%;
+}
+
+p{
+    font-size: $textSM;
+}
+.boton{
+    display: inline-block;
+    font-family: $titleFont;
+    font-size: $textSM;
+    text-decoration: none;
+    color: $color_w;
+    background-color: $color3;
+    opacity: .9;
+    border-radius: 8px;
+    border: none;
+    padding: 3px 20px;
+    &:hover{
+        color: $color_w;
+        cursor: pointer;
+        border: 1px solid $color_w;
+        background-color: $color1;
+        padding: 2px 20px;
+    }
+}
+
+
+// ======== INDEX =====
+
+header{
+    height: 60vh;  
+    background-image: url(../img/header1.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    h1{
+        font-family: $titleFont;
+        color: $color_w;
+        font-size: $textXL;
+        margin: 15px;
+    }
+}
+
+// SEC NOSOTROS ========
+
+.nosotros{
+    height: 50vh;
+    background-color: $color2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    div{
+        height: 100%;
+        max-width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        img{
+            height: 30px;
+            margin: 14px 0;
+        }
+        div{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            text-align: center;
+            h2{
+                font-family: $titleFont;
+                font-size: $textSM;
+                @media screen and (min-width: 390px) {
+                    font-size: $textMD;
+                }
+            }
+            p{
+                @media screen and (max-width: 390px) {
+                    font-size: $textXS;
+                }
+            }
+            a{
+                @media screen and (max-width: 390px) {
+                    font-size: $textXS;
+                }
+            }
+        }
+    }
+
+}
+// SEC MENU ========
+.secmenu{
+    height: 50vh;
+}
+// SEC COMENTARIOS =======
+
+.seccomentarios{
+    position: relative;
+    min-height: 30vh;
+}
+
+.comentarios__marco{
+    height: 80%;
+	border: 2px solid $color4;
+	text-align: center;
+    padding: 26px 10px 10px;
+    margin: 36px 20px 20px;
+    
+}
+
+.comentarios__bandoneon{
+	max-height: 10%;
+    position: relative;
+	z-index: 59;
+	margin-top: 0;
+    width: 50%;
+}
+
+.comentarios__deco{
+    max-height: 30%;
+    z-index: 58;
+    max-width: 50%;
+    position: relative;
+    margin-bottom: auto auto 0px auto;
+}
+
+// SEC CATERING ========
+
+#sec_catering{
+    height: map-get($map: $heights, $key:'h60');
+	width: 100%;
+	background-image: url(../img/bgcatering_.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    div{
+        width: 90%;
+        text-align: left;
+        background-color: #000000c7;
+        margin: 15px;
+        display: flex;
+        flex-direction: column;
+        h4{
+            font-family: $cursiveFont;
+            font-size: $textXXL;
+            color: $color4;
+            position: relative;
+            z-index: 69;
+        }
+        p{
+            text-align: center;
+	        font-size: $textLG;
+            color: $color_w;
+        }
+        a{
+            @extend .boton;
+            background-color: $color4 !important;
+            padding: 1.8%;
+            margin-bottom: 10px;
+            position: relative;
+            align-self: flex-end;
+            margin-right: -15px;
+            opacity: 1;
+
+        }
+    }
+}
+
+// SEC EVENTOS ============
+
+.bg__eventos   {
+	background-image: url(../img/bgeventos.png);
+	background-position: center;
+	background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.eventos{
+	display: flex;
+	justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+
+.eventos__contenido{
+	width: 20%;
+	margin: 15px;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+
+// Sec MAPS
+
+.lowcontact{
+    height: map-get($map: $heights, $key:'h10');
+	background-color: #fff;
+	display: flex;
+	justify-content: space-around;
+    align-items: center;
+}
