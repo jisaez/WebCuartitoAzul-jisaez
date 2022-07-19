@@ -42,16 +42,16 @@
                 </ul>
             </div>
         </div>
-        </nav>
+    </nav>
     <!-- FIN NAV -->
 
-        <header>
+    <header>
             <h1>Un rinconcito argentino en Ciudad Juárez</h1>
             <a role="button" href="pages/menu.html" class="boton">Ver menú</a>         
-        </header>
+    </header>
     
     <!-- inicia NOSOTROS -->
-        <section class="nosotros">
+    <section class="nosotros">
             <div>
                 <img src="img/nosotrosdeco.svg" class="nosotros__deco">
                 <div>  
@@ -63,7 +63,7 @@
                     <a role=button href="pages/nosotros.html" class="boton">Leer más</a> 
                 </div>	
         </div>
-        </section>
+    </section>
     <!-- fin NOSOTROS -->
     
     <!-- inicia MENU -->
@@ -85,75 +85,89 @@
     
     <!-- inicia COMENTARIOS -->
         
-        <div id="carouselExampleControls" class="seccomentarios bg__color3 d-flex align-items-center justify-content-center fle carousel slide position-relative" data-bs-ride="carousel">
+    <div id="carouselExampleControls" class="seccomentarios bg__color3 carousel slide" data-bs-ride="carousel">
             
-            <img src="img/bandoneon.svg" class="comentarios__bandoneon" alt="Dibujo de Bandoneon, instrumento típico del Tango Argentino">
-
-            <div class= "d-flex comentarios__marco align-items-center carousel-inner">
-                <div class="carousel-item active">
-                <p class="text-white m-3 d-block">"Me super encanta, la comida deliciosa y el ambiente tranquilo lo recomiendo si quieres ir a platicar y estar en ambiente agradable."</p>
-                </div>
-                <!-- <div class="carousel-item">
-                <p class="text-white m-3 d-inlineblock">"Time has passed and this place is still great. The best tasting argentinian empanadas are here."</p>
-                </div>
-                <div class="carousel-item h-75">
-                    <p class="text-white m-3 d-block">"Excelente ambiente, con la atención, te hacen sentir parte de ellos.
-                        El vino riquísimo y la cena deliciosa!!!
-                        Indudablemente regresaría a pasar otro rato igual de agradable."</p>
-                </div>
-                <div class="carousel-item">
-                    <p class="text-white m-3 d-block">"Es un lugar excelente, los precios están muy bien (en la media o por debajo). Carne exquisita y la atención es muy buena también. SÚPER RECOMENDABLE"</p>
-                </div>
-                <div class="carousel-item">
-                    <p class="text-white m-3 d-block">"Siempre igual o hasta mas delicioso cada vez que vengo. Las empanadas estan riquisimas! No me molesta venir desde el Paso solamente para comer aqui porque vale mucho la pena."</p>
-                </div> -->
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <img src="img/bandoneon.svg" class="comentarios__bandoneon" alt="Dibujo de Bandoneon, instrumento típico del Tango Argentino">
+        <div class= "comentarios__marco carousel-inner">
+            <button class="comentarios_btnl carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previo</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <div class="carousel-item active">
+                <p class="comentarios_texto">"Me super encanta, la comida deliciosa y el ambiente tranquilo lo recomiendo si quieres ir a platicar y estar en ambiente agradable."</p>
+            </div>
+            <div class="carousel-item">
+                <p class="comentarios_texto">"Time has passed and this place is still great. The best tasting argentinian empanadas are here."</p>
+            </div>
+            <div class="carousel-item h-75">
+                <p class="comentarios_texto">"Excelente ambiente, con la atención, te hacen sentir parte de ellos.
+                    El vino riquísimo y la cena deliciosa!!!
+                    Indudablemente regresaría a pasar otro rato igual de agradable."</p>
+            </div>
+            <div class="carousel-item">
+                <p class="comentarios_texto">"Es un lugar excelente, los precios están muy bien (en la media o por debajo). Carne exquisita y la atención es muy buena también. SÚPER RECOMENDABLE"</p>
+            </div>
+            <div class="carousel-item">
+                <p class="comentarios_texto">"Siempre igual o hasta mas delicioso cada vez que vengo. Las empanadas estan riquisimas! No me molesta venir desde el Paso solamente para comer aqui porque vale mucho la pena."</p>
+            </div>
+            <button class="comentarios_btnr carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
+                <span class="visually-hidden">Próximo</span>
             </button>
-            
-        </div>
+        </div>        
+    </div>
     <!-- fin COMENTARIOS -->
     
     <!-- inicia CATERING -->
-        <section id="sec_catering">
-            <div>
-                <h4>Catering</h4>
-                <p>Si tienes un evento, no te pierdas nuestro exlusivo servicio de catering!</p>
-                <a role="button" href="pages/contacto.html" class="btn ms-auto">Solicita tu presupuesto</a>
-            </div>
-        </section>
+    <section id="sec_catering">
+        <div>
+            <h4>Catering</h4>
+            <p>Si tienes un evento, ¡no te pierdas nuestro exlusivo servicio de catering!</p>
+            <a role="button" href="pages/contacto.html">Solicita tu presupuesto</a>
+        </div>
+    </section>
     <!-- fin CATERING -->
 
     <!-- inicia EVENTOS-->
-        <section class="bg__eventos">
-            <div id="carouselExampleSlidesOnly" class="h-100 col-6 m-3 align-items-center carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="img/eventos1.jpg" class="d-block w-100" alt="Foto de una pareja bailando Tango ARgentino en el barrio de Caminito en Buenos Aires">
+    <section>
+        <div class="container-fluid">
+            <div class="row bg__eventos">
+                <div class="h-75 d-none d-md-inline-block col-md-4 col-lg-3"> 
+                    <img src="img/eventos1.jpg" class="d-block w-100" alt="Foto de una pareja bailando Tango ARgentino en el barrio de Caminito en Buenos Aires">
+                </div>    
+                <!-- contenido -->
+                <!-- <div class="h-md-75 col-md-3 d-flex flex-column justify-content-around align-items-center"> -->
+                <article class="h-75 col-md-4 col-lg-3">    
+                    <img class="eventosdeco w-100" src="img/eventosdeco.svg">
+                    <h5>EVENTOS</h5>
+                    <div id="carouselExampleSlidesOnly" class="col-9 d-md-none carousel slide" data-bs-ride="carousel">
+                        <div class="h-100 carousel-inner">
+                            <div class="h-100 carousel-item active">
+                                <img src="img/eventos1.jpg" class="w-100" alt="Foto de una pareja bailando Tango ARgentino en el barrio de Caminito en Buenos Aires">
+                            </div>
+                            <!-- <div class="carousel-item">
+                                <img src="img/eventos2.jpg" class="d-block w-100" alt="Foto de un alfajor de dulce de leche, servido como postre">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/eventos3.jpg"class="d-block w-100" alt="Foto de una mesa con decoración romántica, pétalos de rosas y copas de vino argentino">
+                            </div> -->
+                        </div>
                     </div>
-                    <div class="carousel-item">
-                        <img src="img/eventos2.jpg" class="d-block w-100" alt="Foto de un alfajor de dulce de leche, servido como postre">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="img/eventos3.jpg"class="d-block w-100" alt="Foto de una mesa con decoración romántica, pétalos de rosas y copas de vino argentino">
-                    </div>
+                    <p class="col-9">Mensualmente manejamos diferentes tipos de eventos para traerte toda la cultura Argentina...</p>
+                    <a role="button" href="pages/contacto.html" class="boton"> Quiero saber más </a>
+                </article>
+                <!-- fin contenido -->
+
+                <div class="h-75 d-none d-md-inline-block col-md-4 col-lg-3"> 
+                    <img src="img/eventos2.jpg" class="d-block w-100" alt="Foto de una pareja bailando Tango ARgentino en el barrio de Caminito en Buenos Aires">
+                </div>
+
+                <div class="h-75 d-none d-lg-inline-block col-lg-3"> 
+                    <img src="img/eventos3.jpg" class="d-block w-100" alt="Foto de una pareja bailando Tango ARgentino en el barrio de Caminito en Buenos Aires">
                 </div>
             </div>
-    
-            <article class="col 6 m-3 eventos">  
-                    <img class="h-25 eventos__contenido--deco" src="img/eventosdeco.svg">	
-                
-                    <h5>EVENTOS</h5>
-                    <p class="text-center">Mensualmente manejamos diferentes tipos de eventos para traerte toda la cultura Argentina...</p>
-                    <a role="button" href="pages/contacto.html" class="w-100 d-inlineblock mb-3 rounded-pill btn text-nowrap col-3 mx-auto btn-primary"> Quiero saber más </a>    
-            </article>    
-        </section>
+        </div> 
+    </section>
         <!-- fin EVENTOS -->
     
         <!-- inicia LOWCONTACT -->

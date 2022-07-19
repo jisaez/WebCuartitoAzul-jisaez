@@ -78,7 +78,7 @@ footer {
 p {
   font-size: 1.5rem; }
 
-.boton, #sec_catering div a {
+.boton, #sec_catering div a, .bg__eventos a {
   display: inline-block;
   font-family: "Quando", serif;
   font-size: 1.5rem;
@@ -89,7 +89,7 @@ p {
   border-radius: 8px;
   border: none;
   padding: 3px 20px; }
-  .boton:hover, #sec_catering div a:hover {
+  .boton:hover, #sec_catering div a:hover, .bg__eventos a:hover {
     color: #f7fbff;
     cursor: pointer;
     border: 1px solid #f7fbff;
@@ -151,33 +151,49 @@ header {
   height: 50vh; }
 
 .seccomentarios {
-  position: relative;
-  min-height: 30vh; }
+  min-height: 30vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px 10%; }
 
 .comentarios__marco {
-  height: 80%;
+  min-height: 25vh;
   border: 2px solid #ffc152;
   text-align: center;
-  padding: 26px 10px 10px;
-  margin: 36px 20px 20px; }
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding: 26px 10px 10px 10px;
+  margin: -36px 20px 20px 20px; }
 
 .comentarios__bandoneon {
-  max-height: 10%;
-  position: relative;
+  max-height: 100px;
   z-index: 59;
-  margin-top: 0;
-  width: 50%; }
+  margin: 0 0 0 0; }
 
-.comentarios__deco {
-  max-height: 30%;
-  z-index: 58;
-  max-width: 50%;
-  position: relative;
-  margin-bottom: auto auto 0px auto; }
+.comentarios_texto {
+  font-size: 1.5rem;
+  color: #f7fbff;
+  margin: auto; }
+  @media screen and (min-width: 768px) {
+    .comentarios_texto {
+      font-size: 2rem; } }
+  @media screen and (min-width: 992px) {
+    .comentarios_texto {
+      font-size: 3rem; } }
+
+.comentarios_btnr {
+  margin: 0px;
+  justify-content: end; }
+
+.comentarios_btnl {
+  margin: 0px;
+  justify-content: start; }
 
 #sec_catering {
   height: 60vh;
-  width: 100%;
+  max-width: 100%;
   background-image: url(../img/bgcatering_.jpg);
   background-size: cover;
   background-position: center;
@@ -185,53 +201,84 @@ header {
   align-items: center;
   justify-content: center; }
   #sec_catering div {
+    max-width: 80%;
     width: 90%;
-    text-align: left;
+    text-align: center;
     background-color: #000000c7;
-    margin: 15px;
+    padding: 16px;
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around; }
+    @media screen and (min-width: 576px) {
+      #sec_catering div {
+        height: auto;
+        max-height: 80%;
+        width: 50%;
+        border-radius: 20px; } }
     #sec_catering div h4 {
       font-family: "Send Flowers", cursive;
       font-size: 6rem;
-      color: #ffc152;
-      position: relative;
-      z-index: 69; }
+      color: #ffc152; }
+      @media screen and (min-width: 480px) {
+        #sec_catering div h4 {
+          font-weight: 900;
+          align-self: flex-start; } }
     #sec_catering div p {
       text-align: center;
-      font-size: 3rem;
+      font-size: 2rem;
       color: #f7fbff; }
+      @media screen and (min-width: 480px) {
+        #sec_catering div p {
+          font-size: 3.5rem; } }
     #sec_catering div a {
       background-color: #ffc152 !important;
-      padding: 1.8%;
-      margin-bottom: 10px;
-      position: relative;
-      align-self: flex-end;
-      margin-right: -15px;
       opacity: 1; }
+      @media screen and (min-width: 480px) {
+        #sec_catering div a {
+          align-self: flex-end; } }
+      #sec_catering div a:hover {
+        padding: 2px 18px; }
+
+.eventosdeco {
+  height: 30px;
+  margin: 10px; }
 
 .bg__eventos {
-  background-image: url(../img/bgeventos.png);
+  min-height: 60vh;
+  background-image: url(../img/bgeventos.jpg);
   background-position: center;
   background-size: cover;
   display: flex;
-  justify-content: center;
-  align-items: center; }
-
-.eventos {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  align-items: center; }
-
-.eventos__contenido {
-  width: 20%;
-  margin: 15px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
   justify-content: space-around;
   align-items: center; }
+  @media screen and (min-width: 576px) {
+    .bg__eventos {
+      flex-direction: row; } }
+  .bg__eventos article {
+    min-height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center; }
+  .bg__eventos h5 {
+    color: #b22420;
+    font-size: 3.5rem;
+    font-family: "Quando", serif;
+    text-align: center; }
+  .bg__eventos p {
+    color: #085492;
+    font-size: 1.5rem;
+    font-weight: 250;
+    text-align: center;
+    margin: 15px; }
+    @media screen and (min-width: 380px) {
+      .bg__eventos p {
+        font-size: 2rem;
+        font-weight: 300; } }
+  .bg__eventos a {
+    width: auto;
+    margin: 10px; }
 
 .lowcontact {
   height: 10vh;

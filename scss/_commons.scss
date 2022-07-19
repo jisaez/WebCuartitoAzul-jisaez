@@ -138,40 +138,66 @@ header{
 // SEC COMENTARIOS =======
 
 .seccomentarios{
-    position: relative;
     min-height: 30vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px 10%;
 }
 
 .comentarios__marco{
-    height: 80%;
+    min-height: 25vh;
 	border: 2px solid $color4;
 	text-align: center;
-    padding: 26px 10px 10px;
-    margin: 36px 20px 20px;
-    
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 26px 10px 10px 10px;
+    margin: -36px 20px 20px 20px;
 }
 
 .comentarios__bandoneon{
-	max-height: 10%;
-    position: relative;
+	max-height: 100px;
+    // position: absolute;
 	z-index: 59;
-	margin-top: 0;
-    width: 50%;
+	margin:0 0 0 0;
 }
 
-.comentarios__deco{
-    max-height: 30%;
-    z-index: 58;
-    max-width: 50%;
-    position: relative;
-    margin-bottom: auto auto 0px auto;
+.comentarios_texto{
+    font-size: $textSM;
+    color: $color_w;
+    margin: auto;
+    @media screen and (min-width: 768px){
+        font-size: $textMD;  
+    }
+    @media screen and (min-width: 992px){
+        font-size: $textLG;  
+    }
+}
+
+// .comentarios__deco{
+//     max-height: 30%;
+//     z-index: 58;
+//     max-width: 50%;
+//     position: relative;
+//     margin-bottom: auto auto 0px auto;
+// }
+
+.comentarios_btnr{
+    margin: 0px;
+    justify-content: end;
+}
+
+.comentarios_btnl{
+    margin: 0px;
+    justify-content: start;
 }
 
 // SEC CATERING ========
 
 #sec_catering{
     height: map-get($map: $heights, $key:'h60');
-	width: 100%;
+	max-width: 100%;
 	background-image: url(../img/bgcatering_.jpg);
     background-size: cover;
     background-position: center;
@@ -179,65 +205,104 @@ header{
     align-items: center;
     justify-content: center;
     div{
+        max-width: 80%;
         width: 90%;
-        text-align: left;
+        text-align: center;
         background-color: #000000c7;
-        margin: 15px;
+        padding: 16px;
         display: flex;
         flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        @media screen and (min-width: 576px) {
+            height: auto;
+            max-height: 80%;
+            width: 50%;
+            border-radius: 20px;
+
+            
+        }
         h4{
             font-family: $cursiveFont;
             font-size: $textXXL;
             color: $color4;
-            position: relative;
-            z-index: 69;
+            @media screen and (min-width: 480px) {
+                font-weight: 900;
+                align-self: flex-start;
+            }
         }
         p{
             text-align: center;
-	        font-size: $textLG;
+	        font-size: $textMD;
             color: $color_w;
+            @media screen and (min-width: 480px) {
+                font-size: $textXL;
+            }
         }
         a{
             @extend .boton;
             background-color: $color4 !important;
-            padding: 1.8%;
-            margin-bottom: 10px;
-            position: relative;
-            align-self: flex-end;
-            margin-right: -15px;
             opacity: 1;
+            @media screen and (min-width: 480px) {
+                align-self: flex-end;
+            } 
+            &:hover{
+                padding: 2px 18px;
+
+            }
 
         }
     }
 }
 
 // SEC EVENTOS ============
+.eventosdeco{
+    height: 30px;
+    margin: 10px;
+}
 
 .bg__eventos   {
-	background-image: url(../img/bgeventos.png);
+    min-height: 60vh;
+	background-image: url(../img/bgeventos.jpg);
 	background-position: center;
 	background-size: cover;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    @media screen and(min-width: 576px) {
+        flex-direction: row;
+    }
+    article{
+        min-height: 40vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    h5{
+        color: $color3;
+        font-size: $textXL;
+        font-family: $titleFont;
+        text-align: center;
+    }
+    p{
+        color: $color1;
+        font-size: $textSM;
+        font-weight: 250;
+        text-align: center;
+        margin: 15px;
+        @media screen and(min-width: 380px) {
+        font-size: $textMD;
+        font-weight: 300;
+        }
+    }
+    a{
+        @extend .boton;
+        width: auto;
+        margin: 10px;   
+    }
 }
 
-.eventos{
-	display: flex;
-	justify-content: space-between;
-    flex-direction: column;
-    align-items: center;
-}
-
-.eventos__contenido{
-	width: 20%;
-	margin: 15px;
-	text-align: center;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-	align-items: center;
-}
 
 // Sec MAPS
 
