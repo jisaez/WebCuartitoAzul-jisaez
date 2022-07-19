@@ -9,30 +9,58 @@
     align-items: center;
     justify-content: center;    	
     div{
+        max-height: 80%;
+        max-width: 70%;
+        text-align: center;
+        background-color: $color_t;
+        padding: 16px;
+        margin: 10px;
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: space-around;
+        border-radius: 20px;
         text-align: center;
-        background-color: #B5B5B5;
-        opacity: .87;
-        justify-content: space-between;
+        @media screen and (min-width: 768px) {
+            max-height: 80%;
+            width: 70%;
+        }
         h1{
             font-family: $cursiveFont;
-            font-size: 9rem;
-            color: $color4; 
+            font-size: $textXL;
+            color: $color4;
+            @media screen and (min-width: 768px) {
+                font-size: $textXXL;
+                font-weight: 900;
+                align-self: flex-start;
+            }
         }
         p{
+            text-align: center;
+	        font-size: $textSM;
             color: $color_w;
-            font-size: 1.7rem;  
+            @media screen and (min-width: 768px) {
+                font-size: $textMD;
+            }
+            @media screen and (min-width: 992px) {
+                font-size: $textLG;
+            }
         }
         a{
-            background-color: $color4;
-            text-decoration: none;
-            padding: 10px;
-            position: relative;
-            left: 10%;
-            top: 29px;
+            @extend .boton;
+            margin: 5px;
+            background-color: $color4 !important;
             opacity: 1;
+            font-size: $textXS;
+            @media screen and (min-width: 768px) {
+                align-self: flex-end;
+                font-size: $textMD;
+            } 
+            &:hover{
+                padding: 2px 18px;
+
+            }
+
         }
 
     }
@@ -43,12 +71,33 @@
 /* PAGE MENU */
 
 .page__menu{
-    height: map-get($map: $heights, $key:'h100');
-    background-color: #9acfdb;
-}
-
-.img__card{
-    max-height: 100px; 
+    min-height: 80vh;
+    max-width: 100%;
+    background-color: $color2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    article{
+        margin: 10px;
+        padding: 5px;
+        img{
+            height: 100px;
+        }
+        div{
+            text-align: center;
+            h5{
+                font-family: $titleFont;
+                font-size: $textMD;
+                color: $color3;
+            }
+            p{
+                font-family: $mainFont;
+                font-size: $textSM;
+                color: $color1;
+            }
+        }
+    }    
 }
 
 /* platillos */
@@ -72,6 +121,7 @@
 	border: 10px double #ffc152;
     animation-name: animopacity;
     animation-duration: 4s;
+    margin: 6px;
 
 }
 
@@ -79,6 +129,10 @@
     transform: scale(1.014);
     border-radius: 60%;
     border:none;
+}
+
+.nosotros__texto{
+    margin: 8px;
 }
 
 /* PAGE CONTACTO */
@@ -90,22 +144,15 @@
 }
 
 .boton__contacto{
-    font-family: 'Gentium Plus', serif;
-    font-size: 2rem;
-    text-decoration: none;
-    color: #FFFFFF;
-    background-color: #b22420;
-    opacity: .8;
-    border: none;
-
+    @extend .boton;
+    display: inline;
+    margin: 5px;
+    font-size: $textXS;
+    @media screen and(min-width: 380px) {
+        font-size:$textSM
+        
+    }
 }
-
-.input__boton{
-	opacity: 1;
-	margin: 5px 5px 20px 40px;
-}
-
-/* PAGE CONTACTO */
 
 .page__contacto{
     height: map-get($map: $heights, $key:'h75');

@@ -48,7 +48,8 @@ nav {
 html {
   font-size: 62.5%;
   height: 100vh;
-  width: 100vw; }
+  width: 100vw;
+  overflow-x: hidden; }
 
 .bg__color3 {
   background-color: #b22420; }
@@ -78,7 +79,7 @@ footer {
 p {
   font-size: 1.5rem; }
 
-.boton, #sec_catering div a, .bg__eventos a {
+.boton, #sec_catering div a, .bg__eventos a, #page__catering div a, .boton__contacto {
   display: inline-block;
   font-family: "Quando", serif;
   font-size: 1.5rem;
@@ -89,7 +90,7 @@ p {
   border-radius: 8px;
   border: none;
   padding: 3px 20px; }
-  .boton:hover, #sec_catering div a:hover, .bg__eventos a:hover {
+  .boton:hover, #sec_catering div a:hover, .bg__eventos a:hover, #page__catering div a:hover, .boton__contacto:hover {
     color: #f7fbff;
     cursor: pointer;
     border: 1px solid #f7fbff;
@@ -348,36 +349,77 @@ footer p {
   align-items: center;
   justify-content: center; }
   #page__catering div {
+    max-height: 80%;
+    max-width: 70%;
+    text-align: center;
+    background-color: #000000c7;
+    padding: 16px;
+    margin: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
-    background-color: #B5B5B5;
-    opacity: .87;
-    justify-content: space-between; }
+    justify-content: space-around;
+    border-radius: 20px;
+    text-align: center; }
+    @media screen and (min-width: 768px) {
+      #page__catering div {
+        max-height: 80%;
+        width: 70%; } }
     #page__catering div h1 {
       font-family: "Send Flowers", cursive;
-      font-size: 9rem;
+      font-size: 3.5rem;
       color: #ffc152; }
+      @media screen and (min-width: 768px) {
+        #page__catering div h1 {
+          font-size: 6rem;
+          font-weight: 900;
+          align-self: flex-start; } }
     #page__catering div p {
-      color: #f7fbff;
-      font-size: 1.7rem; }
+      text-align: center;
+      font-size: 1.5rem;
+      color: #f7fbff; }
+      @media screen and (min-width: 768px) {
+        #page__catering div p {
+          font-size: 2rem; } }
+      @media screen and (min-width: 992px) {
+        #page__catering div p {
+          font-size: 3rem; } }
     #page__catering div a {
-      background-color: #ffc152;
-      text-decoration: none;
-      padding: 10px;
-      position: relative;
-      left: 10%;
-      top: 29px;
-      opacity: 1; }
+      margin: 5px;
+      background-color: #ffc152 !important;
+      opacity: 1;
+      font-size: 1rem; }
+      @media screen and (min-width: 768px) {
+        #page__catering div a {
+          align-self: flex-end;
+          font-size: 2rem; } }
+      #page__catering div a:hover {
+        padding: 2px 18px; }
 
 /* PAGE MENU */
 .page__menu {
-  height: 100vh;
-  background-color: #9acfdb; }
-
-.img__card {
-  max-height: 100px; }
+  min-height: 80vh;
+  max-width: 100%;
+  background-color: #9acfdb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap; }
+  .page__menu article {
+    margin: 10px;
+    padding: 5px; }
+    .page__menu article img {
+      height: 100px; }
+    .page__menu article div {
+      text-align: center; }
+      .page__menu article div h5 {
+        font-family: "Quando", serif;
+        font-size: 2rem;
+        color: #b22420; }
+      .page__menu article div p {
+        font-family: "Roboto", sans-serif;
+        font-size: 1.5rem;
+        color: #085492; }
 
 /* platillos */
 .section__menu {
@@ -395,12 +437,16 @@ footer p {
   border-radius: 60%;
   border: 10px double #ffc152;
   animation-name: animopacity;
-  animation-duration: 4s; }
+  animation-duration: 4s;
+  margin: 6px; }
 
 .nosotros__img:hover {
   transform: scale(1.014);
   border-radius: 60%;
   border: none; }
+
+.nosotros__texto {
+  margin: 8px; }
 
 /* PAGE CONTACTO */
 .input__texto {
@@ -408,19 +454,13 @@ footer p {
   height: 20rem; }
 
 .boton__contacto {
-  font-family: 'Gentium Plus', serif;
-  font-size: 2rem;
-  text-decoration: none;
-  color: #FFFFFF;
-  background-color: #b22420;
-  opacity: .8;
-  border: none; }
+  display: inline;
+  margin: 5px;
+  font-size: 1rem; }
+  @media screen and (min-width: 380px) {
+    .boton__contacto {
+      font-size: 1.5rem; } }
 
-.input__boton {
-  opacity: 1;
-  margin: 5px 5px 20px 40px; }
-
-/* PAGE CONTACTO */
 .page__contacto {
   height: 75vh; }
 
