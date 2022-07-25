@@ -146,7 +146,7 @@
 .boton__contacto{
     @extend .boton;
     display: inline;
-    margin: 5px;
+    margin: 15px;
     font-size: $textXS;
     @media screen and(min-width: 380px) {
         font-size:$textSM
@@ -177,3 +177,37 @@ label{
     font-weight: 900;
 	
  } 
+
+
+// ====== PAGE 404 =======
+.error{
+    width: 100%;
+    min-height: 80vh;
+    background-color: $color_w;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding: 10px;
+        img{
+            max-height: 40vh;
+        }
+        p{
+            margin: 30px;
+            line-height: 3rem;
+            font-size: $textMD;
+            color: $color1;
+            img{
+                max-height: 3rem;
+            }
+            @media screen and (min-width: 576px){
+                line-height: 4rem;
+                font-size: $textXL;
+            }
+                
+        }
+        
+
+}
+
