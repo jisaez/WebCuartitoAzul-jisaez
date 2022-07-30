@@ -51,8 +51,14 @@ html {
   width: 100vw;
   overflow-x: hidden; }
 
+.bg__color2 {
+  background-color: #9acfdb; }
+
 .bg__color3 {
   background-color: #b22420; }
+
+.bg__color4 {
+  background-color: #ffc152; }
 
 .bg__color5 {
   background: linear-gradient(to top, #ffc0cb, #f7fbff); }
@@ -79,7 +85,7 @@ footer {
 p {
   font-size: 1.5rem; }
 
-.boton, #sec_catering div a, .bg__eventos a, #page__catering div a, .boton__contacto {
+.boton, #sec_catering div a, .bg__eventos a, #page__catering div a, .section__menu a, .boton__contacto {
   display: inline-block;
   font-family: "Quando", serif;
   font-size: 1.5rem;
@@ -89,8 +95,9 @@ p {
   opacity: .9;
   border-radius: 8px;
   border: none;
-  padding: 3px 20px; }
-  .boton:hover, #sec_catering div a:hover, .bg__eventos a:hover, #page__catering div a:hover, .boton__contacto:hover {
+  padding: 3px 20px;
+  margin: 5px; }
+  .boton:hover, #sec_catering div a:hover, .bg__eventos a:hover, #page__catering div a:hover, .section__menu a:hover, .boton__contacto:hover {
     color: #f7fbff;
     cursor: pointer;
     border: 1px solid #f7fbff;
@@ -114,10 +121,9 @@ header {
     margin: 15px; }
 
 .nosotros {
-  height: 50vh;
   background-color: #9acfdb;
   display: flex;
-  align-items: center;
+  align-items: stretch;
   justify-content: center; }
   .nosotros div {
     max-height: 100%;
@@ -130,6 +136,7 @@ header {
       height: 30px;
       margin: 14px 0; }
     .nosotros div div {
+      height: 90%;
       display: flex;
       flex-direction: column;
       justify-content: space-evenly;
@@ -137,50 +144,40 @@ header {
       text-align: center; }
       .nosotros div div h2 {
         font-family: "Quando", serif;
-        font-size: 1.5rem; }
+        font-size: 1.5rem;
+        text-shadow: 2px 2px 6px #f7fbff; }
         @media screen and (min-width: 390px) {
           .nosotros div div h2 {
             font-size: 2rem; } }
-        @media screen and (min-width: 992px) {
+        @media screen and (min-width: 768px) {
           .nosotros div div h2 {
             font-size: 3rem; } }
       .nosotros div div p {
-        font-size: 1rem; }
-        @media screen and (min-width: 390px) {
-          .nosotros div div p {
-            font-size: 1.5rem; } }
-        @media screen and (min-width: 576px) {
+        font-size: 1.5rem; }
+        @media screen and (min-width: 768px) {
           .nosotros div div p {
             font-size: 2rem; } }
       @media screen and (max-width: 390px) {
         .nosotros div div a {
           font-size: 1rem; } }
 
-.secmenu {
-  height: 50vh; }
-  .secmenu div h2 {
-    font-family: "Quando", serif;
-    font-size: 1.5rem; }
-    @media screen and (min-width: 390px) {
-      .secmenu div h2 {
-        font-size: 2rem; } }
-    @media screen and (min-width: 992px) {
-      .secmenu div h2 {
-        font-size: 3rem; } }
-  .secmenu div p {
-    font-size: 1rem; }
-    @media screen and (min-width: 390px) {
-      .secmenu div p {
-        font-size: 1.5rem; } }
-    @media screen and (min-width: 576px) {
-      .secmenu div p {
-        font-size: 2rem; } }
-  @media screen and (max-width: 390px) {
-    .secmenu div a {
-      font-size: 1rem; } }
-  .secmenu div img {
-    max-width: 100%;
-    max-height: 100%; }
+.secmenu div h2 {
+  font-family: "Quando", serif;
+  font-size: 2rem; }
+  @media screen and (min-width: 390px) {
+    .secmenu div h2 {
+      font-size: 2rem; } }
+  @media screen and (min-width: 992px) {
+    .secmenu div h2 {
+      font-size: 3rem; } }
+.secmenu div p {
+  font-size: 1.5rem; }
+  @media screen and (min-width: 992px) {
+    .secmenu div p {
+      font-size: 2rem; } }
+.secmenu div img {
+  max-width: 100%;
+  max-height: 100%; }
 
 .seccomentarios {
   min-height: 30vh;
@@ -201,8 +198,7 @@ header {
 
 .comentarios__bandoneon {
   max-height: 100px;
-  z-index: 59;
-  margin: 0 0 0 0; }
+  z-index: 59; }
 
 .comentarios_texto {
   font-size: 1.5rem;
@@ -341,7 +337,7 @@ footer p {
 
 /*page CATERING*/
 #page__catering {
-  height: 80vh;
+  height: 84vh;
   background-image: url(../img/bgcatering.jpg);
   background-size: cover;
   background-position: center;
@@ -398,20 +394,39 @@ footer p {
 
 /* PAGE MENU */
 .page__menu {
-  min-height: 80vh;
-  max-width: 100%;
+  min-height: 84vh;
+  background-image: url(../img/pattern2.png);
   background-color: #9acfdb;
+  padding: 30px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: stretch;
   flex-wrap: wrap; }
   .page__menu article {
+    background-color: #f7fbff;
+    opacity: .8;
     margin: 10px;
-    padding: 5px; }
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 4px;
+    flex-grow: 1; }
+    .page__menu article:hover {
+      scale: 1.04;
+      box-shadow: 1px 1px 4px #000000c7; }
+    @media screen and (min-width: 992px) {
+      .page__menu article {
+        min-height: 40vh; } }
     .page__menu article img {
       height: 100px; }
     .page__menu article div {
-      text-align: center; }
+      text-align: center;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      flex-direction: column; }
       .page__menu article div h5 {
         font-family: "Quando", serif;
         font-size: 2rem;
@@ -421,18 +436,33 @@ footer p {
         font-size: 1.5rem;
         color: #085492; }
 
-/* platillos */
+/* platillos bebidas postres*/
 .section__menu {
-  background-color: #9acfdb;
-  opacity: 1;
-  width: 100%; }
-
-.section__menu--carta {
+  min-height: 84vh;
+  padding: 16px;
   display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap; }
+  align-content: space-around;
+  justify-content: center;
+  flex-direction: column; }
+  .section__menu img {
+    max-width: 100%;
+    box-shadow: 0px 2px 10px #000000c7; }
+  .section__menu a {
+    background-color: #085492;
+    text-align: center;
+    align-self: center;
+    margin: 14px auto 10px; }
 
 /* PAGE NOSOTROS */
+.page__nosotros {
+  min-height: 84vh;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 20px; }
+
 .nosotros__img {
   border-radius: 60%;
   border: 10px double #ffc152;
@@ -454,19 +484,17 @@ footer p {
   height: 20rem; }
 
 .boton__contacto {
-  display: inline;
-  margin: 15px;
+  margin-left: 6px;
   font-size: 1rem; }
   @media screen and (min-width: 380px) {
     .boton__contacto {
       font-size: 1.5rem; } }
 
 .page__contacto {
-  height: 75vh; }
+  height: 84vh; }
 
 fieldset {
   margin: 20px;
-  /* max-width: 60%; */
   text-align: left;
   border-style: double;
   border-color: #b22420;
@@ -481,16 +509,19 @@ label {
   font-size: 2.5rem;
   font-weight: 900; }
 
+textarea {
+  max-height: 50%; }
+
 .error {
   width: 100%;
-  min-height: 80vh;
+  min-height: 84vh;
   background-color: #f7fbff;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   margin: auto;
-  padding: 10px; }
+  padding: 20px; }
   .error img {
     max-height: 40vh; }
   .error p {
