@@ -80,7 +80,8 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-bottom: 0%; }
+  margin-bottom: 0%;
+  padding: 6px; }
 
 p {
   font-size: 1.5rem; }
@@ -484,8 +485,19 @@ footer p {
 
 /* PAGE CONTACTO */
 .input__texto {
-  width: 40rem;
-  height: 20rem; }
+  font-family: "Roboto", sans-serif; }
+  @media screen and (min-width: 576px) {
+    .input__texto {
+      width: 50%; } }
+  @media screen and (min-width: 768px) {
+    .input__texto {
+      font-size: 1.5rem; } }
+
+.text__area {
+  font-family: "Roboto", sans-serif; }
+  @media screen and (min-width: 768px) {
+    .text__area {
+      font-size: 2rem; } }
 
 .boton__contacto {
   margin-left: 6px;
@@ -528,15 +540,15 @@ textarea {
   padding: 20px; }
   .error img {
     max-height: 40vh; }
-  .error p {
+  .error div p {
     margin: 30px;
     line-height: 3rem;
     font-size: 2rem;
     color: #085492; }
-    .error p img {
+    .error div p img {
       max-height: 3rem; }
     @media screen and (min-width: 576px) {
-      .error p {
+      .error div p {
         line-height: 4rem;
         font-size: 3.5rem; } }
 

@@ -174,10 +174,22 @@
 
 /* PAGE CONTACTO */
 .input__texto{
-	width: 40rem;
-	height: 20rem;
+    font-family: $mainFont;
+    @media screen and(min-width: 576px) {
+        width: 50%;
+    }
+	@media screen and(min-width: 768px) {
+        font-size: $textSM;
+    }
+	
 }
 
+.text__area{
+    font-family: $mainFont;
+	@media screen and(min-width: 768px) {
+        font-size: $textMD;
+}
+}
 .boton__contacto{
     @extend .boton;
     margin-left: 6px;
@@ -213,6 +225,8 @@ textarea{
     max-height: 50%;
 }
 
+
+
 // ====== PAGE 404 =======
 .error{
     width: 100%;
@@ -227,17 +241,19 @@ textarea{
     img{
         max-height: 40vh;
     }
-    p{
-        margin: 30px;
-        line-height: 3rem;
-        font-size: $textMD;
-        color: $color1;
-        img{
-            max-height: 3rem;
-        }
-        @media screen and (min-width: 576px){
-            line-height: 4rem;
-            font-size: $textXL;
+    div{
+        p{
+            margin: 30px;
+            line-height: 3rem;
+            font-size: $textMD;
+            color: $color1;
+            img{
+                max-height: 3rem;
+            }
+            @media screen and (min-width: 576px){
+                line-height: 4rem;
+                font-size: $textXL;
+            }
         }
     }
 }
