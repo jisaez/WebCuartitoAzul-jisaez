@@ -312,6 +312,10 @@ header {
     width: auto;
     margin: 10px; }
 
+.mapa {
+  max-width: 90vw;
+  height: 20vh; }
+
 .lowcontact {
   background-color: #fff;
   display: flex;
@@ -414,7 +418,7 @@ footer p {
     border-radius: 4px;
     flex-grow: 1; }
     .page__menu article:hover {
-      scale: 1.04;
+      transform: scale(1.04);
       box-shadow: 1px 1px 4px #000000c7; }
     @media screen and (min-width: 992px) {
       .page__menu article {

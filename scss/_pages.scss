@@ -1,5 +1,7 @@
 /*page CATERING*/
 
+
+
 #page__catering{
     height: map-get($map: $heights, $key:'h84');
 	background-image: url(../img/bgcatering.jpg);
@@ -89,7 +91,7 @@
         border-radius: 4px;
         flex-grow: 1;
         &:hover{
-            scale: 1.04;
+            transform: scale(1.04);
             box-shadow: 1px 1px 4px $color_t;
         }
         @media  screen and(min-width: 992px) {
@@ -178,7 +180,6 @@
 
 .boton__contacto{
     @extend .boton;
-    // display: inline-block;
     margin-left: 6px;
     font-size: $textXS;
     @media screen and(min-width: 380px) {
